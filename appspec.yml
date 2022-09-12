@@ -10,7 +10,6 @@ hooks:
       runas: ec2-user
   ApplicationStart:
     - location: scripts/start_server.sh
-    - location: scripts/create_db.sh
       timeout: 300
       runas: ec2-user
   ApplicationStop:
